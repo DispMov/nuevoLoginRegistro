@@ -2,7 +2,7 @@
     $con = mysqli_connect("mysql13.000webhost.com", "a4243694_karlyy", "12karlyyhdz", "a4243694_ejemplo");
     
     $usernombre = $_POST["usernombre"];
-    $contraseña = $_POST["contraseña"];
+    $contrasena = $_POST["contraseña"];
     
     $statement = mysqli_prepare($con, "SELECT * FROM usuario WHERE usernombre = ? AND contraseña = ?");
     mysqli_stmt_bind_param($statement, "ss", $usernombre, $contraseña);
