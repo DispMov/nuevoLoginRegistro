@@ -24,4 +24,4 @@
     
     echo json_encode($response);
 ?>
-Status 
+
